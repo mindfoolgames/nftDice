@@ -1,0 +1,12 @@
+{
+    "description": "MFG NFT Dice",
+    "external_url": "https://mindfoolgames.com",
+    "image": "https://ele5zqc2jqhz.usemoralis.com/nfts/000000000000000000.png",
+    "name": "MFG NFT Dice DAO Token",
+    "attributes": [
+        {
+            "trait_type": "Type",
+            "value": "DAO Token"
+        }
+    ]
+}

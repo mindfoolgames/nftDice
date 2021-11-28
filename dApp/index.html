@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MFG NFT Dice- Home</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">MFG NFT Dice</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="diceNFTMain.html">Minting/Collection</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="play.html">Play</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="voting.html">Voting (DAO)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin.html">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logout.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">MindFoolGames NFT Dice</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5 mb-5">
+      <h1>Background</h1>
+    </div>
+    <div>
+      <p>MFG NFT Dice allows you to buy packs of 6-sided dice represented as NFTs (ERC1155 standard) with randomly
+        selected colors using Chainlink’s VRF features for on-chain randomness.</p>
+      <p>The Minting/Collection page shows the dice that you own and allows you to mint more by pressing the “Mint Pack”
+        button. There is a 0.25 MATIC fee to mint a new pack. Each pack minted also grants you an MFG NFT Dice DAO Token
+        for future Voting/DAO functionality.</p>
+      <p>The Play page randomly selects 5 dice from your collection (press “Pick Dice” to do a new random draw). The
+        “Roll Dice” button engages a separate smart contract that will use Chainlink’s VRF features for on-chain
+        randomness. There is a 0.005 MATIC fee to roll the dice.</p>
+      <p>The Admin page allows the admin to deposit/withdraw LINK from both smart contracts (DiceNFT.sol and
+        RollBones.sol). It will also allow the admin to withdraw MATIC from both contracts. Note: anyone can deposit to
+        a contract but only the admin can withdraw.</p>
+    </div>
+
+    <div class="row mt-5 mb-3">
+      <h1>Technologies Used</h1>
+    </div>
+    <div>
+      <p>ERC1155 Standard.</p>
+      <p>Metamask Wallet.</p>
+      <p>Polygon… contracts are deployed to the Polygon Mumbai Test network. The Polygon network was selected for better
+        transaction speed and low gas fees (including low fees for Chainlink VRF).</p>
+      <p>Remix for smart contract deployment.</p>
+      <p>Moralis for web3 integration, metamask login, smart contract interaction, and static site hosting.</p>
+      <p>Alchemy web socket endpoints to enable the dApp to react to smart contract events.</p>
+      <p>The p5.js library was used to create the graphics for the dice and also to handle the UI and animation for
+        rolling the dice on the play screen.</p>
+    </div>
+
+    <div class="row mt-5 mb-5">
+      <h1>Areas for improvement:</h1>
+    </div>
+    <div>
+      <p>DAO / Voting Functionality.</p>
+      <p>Convert to a web framework like React or Vue.</p>
+      <p>Shift from Remix to Brownie for a better development / testing workflow.</p>
+      <p>Remix for smart contract deployment.</p>
+      <p class="mb-5">Because of time constraints RollBones.sol is just a reference implementation of a game. Create
+        actual games
+        that leverage the DiceNFT.sol smart contract.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

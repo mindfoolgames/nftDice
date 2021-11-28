@@ -1,0 +1,16 @@
+{
+    "description": "MFG NFT Dice",
+    "external_url": "https://mindfoolgames.com",
+    "image": "https://ele5zqc2jqhz.usemoralis.com/nfts/000000000000000001.png",
+    "name": "Red D6",
+    "attributes": [
+        {
+            "trait_type": "Type",
+            "value": "D6"
+        },
+        {
+            "trait_type": "Color",
+            "value": "Red"
+        }
+    ]
+}
